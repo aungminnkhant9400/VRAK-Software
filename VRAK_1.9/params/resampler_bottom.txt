@@ -1,0 +1,22 @@
+(Direction 1.0000000000 0.0000000000 0.0000000000 0.0000000000 1.0000000000 0.0000000000 0.0000000000 0.0000000000 1.0000000000)
+(UseDirectionCosines "true")
+
+// BSplineTransform specific
+(GridSize 11 11 15)
+(GridIndex 0 0 0)
+(GridSpacing 64.0000000000 64.0000000000 64.0000000000)
+(GridOrigin -320.0000000000 -470.0000000000 939.0000000000)
+(GridDirection 1.0000000000 0.0000000000 0.0000000000 0.0000000000 1.0000000000 0.0000000000 0.0000000000 0.0000000000 1.0000000000)
+(BSplineTransformSplineOrder 3)
+(UseCyclicTransform "false")
+
+// ResampleInterpolator specific
+(ResampleInterpolator "FinalBSplineInterpolator")
+(FinalBSplineInterpolationOrder 3)
+
+// Resampler specific
+(Resampler "DefaultResampler")
+(DefaultPixelValue -1000.000000)
+(ResultImageFormat "mhd")
+(ResultImagePixelType "float")
+(CompressResultImage "false")

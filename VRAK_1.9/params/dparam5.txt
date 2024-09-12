@@ -1,0 +1,39 @@
+
+
+// ********** Several
+
+(WriteTransformParametersEachIteration "false")
+(WriteTransformParametersEachResolution "false")
+(WriteResultImageAfterEachResolution "false")
+(WritePyramidImagesAfterEachResolution "false")
+(ShowExactMetricValue "true")
+(ErodeMask "false" "false" "true" "true" "true")
+(UseDirectionCosines "true")
+
+
+// ********** ImageSampler
+
+//Number of spatial samples used to compute the mutual information in each resolution level:
+(ImageSampler "RandomCoordinate")
+(NumberOfSpatialSamples 8000)
+(NewSamplesEveryIteration "true")
+(UseRandomSampleRegion "true")
+(MaximumNumberOfSamplingAttempts 50)
+
+
+// ********** Interpolator and Resampler
+
+//Order of B-Spline interpolation used in each resolution level:
+(BSplineInterpolationOrder 1)
+
+//Order of B-Spline interpolation used for applying the final deformation:
+(FinalBSplineInterpolationOrder 3)
+
+//Default pixel value for pixels that come from outside the picture:
+(DefaultPixelValue -1000)
+
+(WriteResultImage "true")
+
+// The pixel type and format of the resulting deformed moving image
+(ResultImagePixelType "float")
+(ResultImageFormat "mhd")

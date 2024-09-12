@@ -1,0 +1,7 @@
+
+(HowToCombineTransforms "Compose")
+
+
+// ********** Optimizer
+
+// Maximum number of iterations in each resolution level:
